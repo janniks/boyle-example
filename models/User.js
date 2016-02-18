@@ -1,4 +1,4 @@
-var userSchema = new process.DB.Schema({
+var userSchema = new DB.Schema({
 	username: {
 		type: String,
 		required: true,
@@ -13,4 +13,4 @@ var userSchema = new process.DB.Schema({
 	}
 });
 
-module.exports = process.DB.Model('user', userSchema);
+module.exports = DB.Model('user', userSchema);
