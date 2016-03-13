@@ -2,18 +2,21 @@
  * routes.js
  * 
  * Configure the http routes
- * Default values are commented out below
+ * Example values are commented out below
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-module.exports = [
-	{
-		'http': 'GET',
-		'path': '/hello',
-		'ctrl': 'SiteController.world'
-	},
-	{
-		'http': 'GET',
-		'path': '/user',
-		'ctrl': 'SiteController.user'
-	}
-];
+module.exports = {
+
+	/*
+	 *  '/hello': 'SiteController.world',
+	 *
+	 *  'GET /multi': [
+	 * 		'SiteController.foo',
+	 * 		'SiteController.bar'
+	 *  ]
+	 */
+
+	'/':         'SiteController.global',
+	'/hello':    'SiteController.world',
+	'GET /user': 'SiteController.user'
+};
