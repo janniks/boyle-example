@@ -24,4 +24,14 @@ module.exports = {
 	'Models': [
 		'User',
 	],
+
+	/*
+	 * Utils: Array of Utils that are accessible globally with Utils.<Name>
+	 * default: []
+	 * accepted: [string] or false type
+	 * example: [ 'UnitConversion', 'SecretAlgorithm' ]
+	 */
+	'Utils': [
+		'Random',
+	],
 };
